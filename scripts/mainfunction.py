@@ -847,7 +847,7 @@ class classifyImage(object):
         pushFeedback('Predicting model...')
 
         if feedback == 'gui':
-            progress = pB.progressBar('Predicting model...', total / 10)
+            progress = pB.progressBar('Predicting model...', int(total / 10))
 
         for i in range(0, nl, y_block_size):
             if not 'lastBlock' in locals():
